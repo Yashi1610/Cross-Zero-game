@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cross - Zero — Play</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CROSS — ZERO</div>
+    <div class="scores" id="scores">
+      <div class="score"><strong id="scoreX">0</strong><small>X</small></div>
+      <div class="score"><strong id="scoreO">0</strong><small>O</small></div>
+      <div class="score"><strong id="scoreD">0</strong><small>Draw</small></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="status" id="status">Player X's turn</div>
+
+      <div class="board" id="board" role="grid" aria-label="Tic Tac Toe board">
+        <!-- 9 cells inserted here -->
+        <div class="cell" data-index="0" role="button" tabindex="0"></div>
+        <div class="cell" data-index="1" role="button" tabindex="0"></div>
+        <div class="cell" data-index="2" role="button" tabindex="0"></div>
+        <div class="cell" data-index="3" role="button" tabindex="0"></div>
+        <div class="cell" data-index="4" role="button" tabindex="0"></div>
+        <div class="cell" data-index="5" role="button" tabindex="0"></div>
+        <div class="cell" data-index="6" role="button" tabindex="0"></div>
+        <div class="cell" data-index="7" role="button" tabindex="0"></div>
+        <div class="cell" data-index="8" role="button" tabindex="0"></div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="btnNew">New Game</button>
+        <button class="btn ghost" id="btnReset">Reset Scores</button>
+        <a class="btn small" href="index.html">Back</a>
+      </div>
+    </section>
+  </main>
+
+  <audio id="sndPlace"></audio>
+  <audio id="sndWin"></audio>
+  <audio id="sndDraw"></audio>
+  <audio id="sndReset"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
